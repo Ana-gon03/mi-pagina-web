@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO y redes sociales -->
+    <title>Ana Guadalupe Ortiz González — Portafolio</title>
+    <meta name="description" <meta property="og:description"
+        content="Ana Guadalupe Ortiz González, 22 años. Estudiante de Ingeniería en Sistemas Computacionales en ESCOM · IPN. Apasionada por la programación, la criptografía y transformar ideas en proyectos reales. Amante de conocer lugares nuevos y disfrutar tiempo en familia.">
+    <meta property="og:title" content="Ana Guadalupe Ortiz González — Portafolio">
+    <meta property="og:description"
+        content="Ana Guadalupe Ortiz González, 22 años. Estudiante de Ingeniería en Sistemas Computacionales en ESCOM · IPN. Apasionada por la programación, la criptografía y transformar ideas en proyectos reales. Amante de conocer lugares nuevos y disfrutar tiempo en familia.">
+    <meta property="og:image" content="https://tusitio.com/img/og-image.jpg"> <!-- ✏️ Reemplaza con tu imagen -->
+    <meta property="og:url" content="https://tusitio.com"> <!-- ✏️ Reemplaza con tu URL -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Fuentes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ══════════════════════════════════════
+       NAVEGACIÓN
+    ══════════════════════════════════════ -->
+    <nav>
+        <a class="nav-logo" href="#inicio">A.G.O.G.</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menú" aria-expanded="false">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#formacion">Formación</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#criptografia">Criptografía</a></li>
+            <li><a href="#documentos">Docs</a></li>
+        </ul>
+    </nav>
+
+    <!-- ══════════════════════════════════════
+       HERO / INICIO
+    ══════════════════════════════════════ -->
+    <section id="inicio">
+        <div class="hero-text">
+            <span class="hero-eyebrow">✦ Portafolio Personal</span>
+            <h1 class="hero-name">
+                Ana Guadalupe<br>
+                <em>Ortiz González</em>
+            </h1>
+            <p class="hero-tagline">
+                Estudiante de Ingeniería en Sistemas Computacionales en ESCOM · IPN.
+                Apasionada por la programación, las bases de datos y convertir ideas en proyectos reales. 💜
+            </p>
+            <div class="hero-badges">
+                <span class="badge">👩🏻‍💻 ESCOM · IPN</span>
+                <span class="badge">🎓 6° Semestre</span>
+                <span class="badge">🔐 Criptografía</span>
+                <span class="badge">🌸 K-pop Fan</span>
+            </div>
+            <div class="hero-btns">
+                <a href="#contacto" class="btn-primary">Contáctame</a>
+                <a href="docs/Ana_Ortiz_CV.pdf" download class="btn-outline">⬇ Descargar CV</a>
+            </div>
+        </div>
+
+        <div class="hero-img-wrap">
+            <div class="hero-photo-frame">
+                <!-- ✏️ REEMPLAZA con tu foto (formatos WebP + JPG) -->
+                <picture>
+                    <img src="img/yo.jpg.jpeg" alt="Ana Guadalupe Ortiz González" loading="eager" width="340"
+                        height="400">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       SOBRE MÍ
+    ══════════════════════════════════════ -->
+    <section id="sobre-mi">
+        <div class="reveal">
+            <p class="section-label">01 · Presentación</p>
+            <h2 class="section-title">Sobre <span>mí</span></h2>
+        </div>
+
+        <div class="sobre-grid reveal">
+            <!-- Texto -->
+            <div class="sobre-info">
+                <p>
+                    Hola, Soy <strong>Ana Guadalupe</strong>, tengo 22 años y soy estudiante de Ingeniería en Sistemas
+                    Computacionales en la Escuela Superior de Cómputo del IPN. Me apasiona entender
+                    cómo funciona la tecnología.
+                </p>
+                <p>
+                    Me gusta aprender constantemente, ya sea en clase, en proyectos personales o
+                    explorando temas nuevos por mi cuenta. Disfruto enfrentar nuevos retos tecnológicos
+                    y transformar ideas en proyectos reales.
+                </p>
+                <p>
+                    Fuera de la Universidad, disfruto el k-pop, los doramas coreanos y todo lo relacionado
+                    con la cultura de Corea del Sur 🇰🇷. También me encanta conocer lugares nuevos y
+                    compartir momentos especiales con mi familia, quienes son mi mayor apoyo e inspiración.
+                </p>
+
+                <!-- ✏️ Cambia el correo por el tuyo -->
+                <a href="mailto:ana.ortiz@ejemplo.com" class="email-link">
+                    ✉️ lupita.ortiz.0311@gmail.com
+                </a>
+
+                <!-- Redes sociales ✏️ Actualiza los href con tus links -->
+                <div class="redes-sociales">
+                    <a href="https://github.com/Ana-gon03" target="_blank" rel="noopener noreferrer"
+                        class="red-btn red-github">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.04c-3.34.72-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.74-1.33-1.74-1.08-.74.08-.73.08-.73 1.2.09 1.82 1.22 1.82 1.22 1.07 1.82 2.8 1.3 3.48.99.1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/ana-ortiz-gonzalez/" target="_blank" rel="noopener noreferrer"
+                        class="red-btn red-linkedin">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.93v5.68H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46C23.21 24 24 23.23 24 22.27V1.73C24 .77 23.21 0 22.23 0z" />
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/anaog_3/" target="_blank" rel="noopener noreferrer"
+                        class="red-btn red-instagram">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85 0 3.2-.01 3.58-.07 4.85-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07-3.2 0-3.58-.01-4.85-.07-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12c0-3.2.01-3.58.07-4.85C2.38 3.86 3.9 2.31 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.7.07 7.05.01 8.33 0 8.74 0 12c0 3.26.01 3.67.07 4.95.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24c3.26 0 3.67-.01 4.95-.07 4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95 0-3.26-.01-3.67-.07-4.95-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32A6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z" />
+                        </svg>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tarjeta de info -->
+            <div class="info-card">
+                <div class="info-row">
+                    <span class="info-icon">🎓</span>
+                    <div><strong>Carrera</strong><span>Ingeniería en Sistemas Computacionales</span></div>
+                </div>
+                <div class="info-row">
+                    <span class="info-icon">🏫</span>
+                    <div><strong>Institución</strong><span>ESCOM · Instituto Politécnico Nacional</span></div>
+                </div>
+                <div class="info-row">
+                    <span class="info-icon">📅</span>
+                    <div><strong>Semestre</strong><span>8° Semestre</span></div>
+                </div>
+                <div class="info-row">
+                    <span class="info-icon">📍</span>
+                    <div><strong>Ciudad</strong><span>Ciudad de México, México</span></div>
+                </div>
+                <div class="info-row">
+                    <span class="info-icon">💌</span>
+                    <div><strong>Correo</strong><span>lupita.ortiz.0311@gmail.com</span></div>
+                </div>
+                <div class="info-row">
+                    <span class="info-icon">🌸</span>
+                    <div><strong>Intereses</strong><span>K-pop · Doramas · Ciberseguridad · Nube · Código </span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       FORMACIÓN ACADÉMICA
+    ══════════════════════════════════════ -->
+    <section id="formacion">
+        <div class="reveal">
+            <p class="section-label">02 · Trayectoria</p>
+            <h2 class="section-title">Formación <span>Académica</span></h2>
+            <div class="divider"></div>
+        </div>
+        <div class="timeline reveal">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="tl-year">2022 – Presente</div>
+                <div class="tl-title">Ingeniería en Sistemas Computacionales</div>
+                <div class="tl-place">Escuela Superior de Cómputo (ESCOM) — Instituto Politécnico Nacional · Ciudad de
+                    México</div>
+                <div class="tl-desc">
+                    Formación profesional enfocada en desarrollo de software, bases de datos, redes y ciberseguridad.
+                    Participación en proyectos académicos orientados a la programación y seguridad informática.
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="tl-year">2018 – 2022</div>
+                <div class="tl-title">Carrera Técnica en Informática</div>
+                <div class="tl-place">CBT María Luisa Marina de Suárez · Coacalco, Estado de México</div>
+                <div class="tl-desc">
+                    Formación técnica en informática, incluyendo fundamentos de programación,
+                    mantenimiento de equipos de cómputo y bases de datos.
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="tl-year">2015 – 2018</div>
+                <div class="tl-title">Educación Secundaria</div>
+                <div class="tl-place">Escuela Secundaria Técnica No. 89</div>
+                <div class="tl-desc">
+                    Formación básica con taller de Informática, donde desarrollé mis primeros
+                    conocimientos en computación y uso de herramientas digitales.
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="tl-year">2009 – 2015</div>
+                <div class="tl-title">Educación Primaria</div>
+                <div class="tl-place">Escuela Primaria Moctezuma Xocoyotzin</div>
+                <div class="tl-desc">
+                    Formación académica básica y desarrollo de habilidades fundamentales
+                    en matemáticas, lectura y trabajo en equipo.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       HABILIDADES
+    ══════════════════════════════════════ -->
+    <section id="habilidades">
+        <div class="reveal">
+            <p class="section-label">03 · Competencias</p>
+            <h2 class="section-title">Habilidades &amp; <span>Skills</span></h2>
+        </div>
+
+        <div class="skills-grid reveal">
+            <!-- Técnicas -->
+            <div>
+                <div class="skill-group-title">🛠 Técnicas</div>
+
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">HTML &amp; CSS</span><span
+                            class="skill-pct">80%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">JavaScript</span><span
+                            class="skill-pct">70%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="70"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">MySQL · Bases de Datos</span><span
+                            class="skill-pct">75%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Kotlin</span><span class="skill-pct">55%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="55"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Azure</span><span class="skill-pct">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="65"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Python</span><span class="skill-pct">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="60"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blandas -->
+            <div>
+                <div class="skill-group-title">🌸 Habilidades Blandas</div>
+                <div class="soft-chips">
+                    <span class="soft-chip">💬 Comunicación efectiva</span>
+                    <span class="soft-chip">🤝 Trabajo en equipo</span>
+                    <span class="soft-chip">⏰ Responsabilidad</span>
+                    <span class="soft-chip">📚 Aprendizaje continuo</span>
+                    <span class="soft-chip">🗂 Organización</span>
+                    <span class="soft-chip">🎨 Creatividad</span>
+                    <span class="soft-chip">💪 Perseverancia</span>
+                    <span class="soft-chip">🌐 Adaptabilidad</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       PROYECTOS
+    ══════════════════════════════════════ 
+    <section id="proyectos">
+        <div class="reveal">
+            <p class="section-label">04 · Trabajo</p>
+            <h2 class="section-title">Mis <span>Proyectos</span></h2>
+        </div>
+
+        <div class="proyectos-grid reveal">
+            <div class="proyecto-card">
+                <div class="proyecto-banner banner-mint">🏥</div>
+                <div class="proyecto-body">
+                    <div class="proyecto-tag">Base de Datos</div>
+                    <div class="proyecto-name">Sistema BD Hospital</div>
+                    <p class="proyecto-desc">Modelo entidad-relación para gestionar pacientes, doctores, citas y
+                        expedientes médicos.</p>
+                    <div class="proyecto-techs">
+                        <span class="tech-tag">MySQL</span><span class="tech-tag">SQL</span><span
+                            class="tech-tag">Modelado ER</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <div class="proyecto-banner banner-purple">🔐</div>
+                <div class="proyecto-body">
+                    <div class="proyecto-tag">Criptografía</div>
+                    <div class="proyecto-name">Implementación PGP</div>
+                    <p class="proyecto-desc">Análisis e implementación del protocolo PGP para cifrado y firma digital en
+                        la materia de Criptografía.</p>
+                    <div class="proyecto-techs">
+                        <span class="tech-tag">Python</span><span class="tech-tag">PGP</span><span
+                            class="tech-tag">ECDSA</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <div class="proyecto-banner banner-blue">📱</div>
+                <div class="proyecto-body">
+                    <div class="proyecto-tag">Desarrollo Móvil</div>
+                    <div class="proyecto-name">App en Kotlin</div>
+                    <p class="proyecto-desc">Aplicación Android para gestión de tareas académicas desarrollada como
+                        proyecto escolar.</p>
+                    <div class="proyecto-techs">
+                        <span class="tech-tag">Kotlin</span><span class="tech-tag">Android Studio</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <div class="proyecto-banner banner-rose">🌐</div>
+                <div class="proyecto-body">
+                    <div class="proyecto-tag">Desarrollo Web</div>
+                    <div class="proyecto-name">Portafolio Personal</div>
+                    <p class="proyecto-desc">Este mismo portafolio, diseñado y desarrollado como proyecto para Tópicos
+                        Selectos en Criptografía.</p>
+                    <div class="proyecto-techs">
+                        <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span
+                            class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- ══════════════════════════════════════
+       HOBBIES
+    ══════════════════════════════════════ -->
+    <section id="proyectos">
+        <div class="reveal">
+            <p class="section-label">05 · Fuera del código</p>
+            <h2 class="section-title">Mis <span>Hobbies</span></h2>
+        </div>
+
+        <!-- 3 Tarjetas de hobbies con foto -->
+        <div class="hobbies-grid reveal">
+            <div class="hobby-card">
+                <div class="hobby-img hobby-kpop">
+                    <img src="img/doramas2.jpg" alt="K-pop" loading="lazy">
+                </div>
+                <div class="hobby-body">
+                    <div class="hobby-name">K-pop &amp; Doramas</div>
+                    <p class="hobby-desc">
+                        El k-pop es mi forma de conectar con otra cultura y desconectarme del estrés.
+                        Me encanta seguir a mis artistas favoritos y descubrir nueva música cada semana.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-img hobby-code">
+                    <img src="img/programacion.jpg" alt="Programación personal" loading="lazy">
+                </div>
+                <div class="hobby-body">
+                    <div class="hobby-name">Programación</div>
+                    <p class="hobby-desc">
+                        Más allá de la escuela, me gusta explorar proyectos propios: scripts,
+                        diseño web y aprender tecnologías nuevas por pura curiosidad.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-img hobby-dorama">
+                    <img src="img/dormir.jpg" alt="Doramas y cultura coreana" loading="lazy">
+                </div>
+                <div class="hobby-body">
+                    <div class="hobby-name">Dormir &amp; Comer </div>
+                    <p class="hobby-desc">
+                        Ver doramas me abrió las puertas al idioma coreano, la gastronomía y
+                        las costumbres de Corea del Sur. Un mundo que me fascina 🌸
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="videohobbies">
+        <div class="reveal">
+            <div class="videos-section-title">🎥 Mis Hobbies</div>
+            <div class="videos-grid">
+                <!-- Video 1 -->
+                <div class="video-card">
+                    <div class="video-wrapper" data-video="videos/hobby1.mp4" data-poster="img/poster-hobby1.jpg">
+                        <img src="img/lugares.jpg" alt="Video preview" class="video-poster">
+                        <button class="video-play-btn" aria-label="Reproducir video">▶</button>
+                        <video class="video-player" preload="metadata" controls style="display: none;">
+                            <source src="videos/CDBZ5058.MOV" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-title">Mi hobby favorito 🎵</div>
+                        <div class="video-desc">Conocer nuevos lugares y tener nuevas experiencias.</div>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card">
+                    <div class="video-wrapper" data-video="videos/hobby2.mp4" data-poster="img/poster-hobby2.jpg">
+                        <img src="img/korea.jpg" alt="Video preview" class="video-poster">
+                        <button class="video-play-btn" aria-label="Reproducir video">▶</button>
+                        <video class="video-player" preload="metadata" controls style="display: none;">
+                            <source src="videos/IRJG0026.MOV" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-title">Me encanta la Cultura Koreana 🌸</div>
+                        <div class="video-desc">Mi pasatiempo favorito es escuhar k-pop y ver doramas.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       VIDEO PGP
+    ══════════════════════════════════════ -->
+    <section id="video-pgp">
+        <div class="reveal">
+            <p class="section-label">06 · Presentación PGP</p>
+            <h2 class="section-title">Video sobre <span>PGP</span></h2>
+        </div>
+
+        <div class="pgp-wrap reveal">
+            <div class="pgp-text">
+                <h3>¿Qué es PGP y por qué importa?</h3>
+                <p>
+                    En este video presento el protocolo <strong>Pretty Good Privacy (PGP)</strong>,
+                    su historia, sus servicios de seguridad, el proceso de firma digital y su
+                    importancia en la criptografía moderna.
+                </p>
+                <p>
+                    Explico cómo PGP combina criptografía simétrica y asimétrica para garantizar
+                    <strong>confidencialidad, autenticación e integridad</strong> en las comunicaciones digitales.
+                </p>
+                <p>🕐 Duración: 3 minutos</p>
+            </div>
+
+            <div class="pgp-video-frame">
+                <!-- ✏️ Reemplaza con tu video -->
+                <video controls preload="metadata" poster="img/PGP.png">
+                    <source src="videos/PGP.mp4" type="video/mp4">
+                    Tu navegador no soporta video HTML5.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       ACERCA DE CRIPTOGRAFÍA
+    ══════════════════════════════════════ -->
+    <section id="criptografia">
+        <div class="reveal">
+            <p class="section-label">07 · Conocimiento</p>
+            <h2 class="section-title">Acerca de la <span>Criptografía</span></h2>
+        </div>
+
+        <div class="crypto-grid reveal">
+            <!-- Tarjeta 1: Joan Clarke -->
+            <div class="crypto-card">
+                <div class="crypto-img">
+                    <img src="img/criptografa.jpg" alt="Joan Clarke" loading="lazy">
+                </div>
+                <div class="crypto-content">
+                    <span class="crypto-cat">Biografía</span>
+                    <h3 class="crypto-title">Joan Clarke — La criptóloga que ayudó a descifrar Enigma</h3>
+                    <p class="crypto-body">
+                        Joan Clarke fue una destacada criptóloga británica que desempeñó un papel
+                        fundamental durante la Segunda Guerra Mundial en Bletchley Park.
+                        Formó parte del equipo encargado de descifrar los mensajes codificados
+                        por la máquina Enigma utilizada por la Alemania nazi.
+                    </p>
+                    <p class="crypto-body">
+                        Su trabajo en criptoanálisis fue clave para acelerar la victoria aliada,
+                        aunque durante muchos años su contribución no recibió el reconocimiento
+                        merecido. Joan Clarke es hoy un símbolo del talento femenino en la
+                        criptografía y una figura inspiradora en la historia de la ciberseguridad.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: RSA -->
+            <div class="crypto-card">
+                <div class="crypto-img">
+                    <img src="img/RSA.png" alt="RSA Algorithm" loading="lazy">
+                </div>
+                <div class="crypto-content">
+                    <span class="crypto-cat">Historia del Algoritmo</span>
+                    <h3 class="crypto-title">RSA — El algoritmo que cambió todo</h3>
+                    <p class="crypto-body">
+                        En 1977, Ron Rivest, Adi Shamir y Leonard Adleman publicaron RSA, el primer sistema
+                        práctico de criptografía de clave pública. Basado en la dificultad de factorizar
+                        números primos muy grandes, revolucionó la seguridad informática y sentó las bases
+                        de protocolos como HTTPS, TLS y PGP.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: ECC -->
+            <div class="crypto-card">
+                <div class="crypto-img">
+                    <img src="img/curva.svg" alt="Elliptic Curve Cryptography" loading="lazy">
+                </div>
+                <div class="crypto-content">
+                    <span class="crypto-cat">Evento Importante</span>
+                    <h3 class="crypto-title">Criptografía de Curva Elíptica (ECC)</h3>
+                    <p class="crypto-body">
+                        Propuesta por Neal Koblitz y Victor Miller en 1985, la ECC ofrece el mismo nivel
+                        de seguridad que RSA pero con claves mucho más pequeñas, ideal para dispositivos
+                        móviles. Hoy es la base de ECDSA, utilizado en Bitcoin, certificados SSL modernos
+                        y en nuestras prácticas de PGP.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ══════════════════════════════════════
+       OBJETIVOS PROFESIONALES
+    ══════════════════════════════════════ 
+    <section id="objetivos">
+        <div class="reveal">
+            <p class="section-label">08 · Visión</p>
+            <h2 class="section-title">Objetivos <span>Profesionales</span></h2>
+        </div>
+
+        <div class="objetivos-list reveal">
+            <div class="objetivo-item">
+                <div class="obj-num">1</div>
+                <div class="obj-text">Especializarme en <strong>ciberseguridad</strong> y criptografía aplicada</div>
+            </div>
+            <div class="objetivo-item">
+                <div class="obj-num">2</div>
+                <div class="obj-text">Desarrollar habilidades sólidas en <strong>desarrollo backend</strong> con Java o
+                    Python</div>
+            </div>
+            <div class="objetivo-item">
+                <div class="obj-num">3</div>
+                <div class="obj-text">Alcanzar un nivel <strong>intermedio de inglés</strong> para entornos
+                    internacionales</div>
+            </div>
+            <div class="objetivo-item">
+                <div class="obj-num">4</div>
+                <div class="obj-text">Realizar <strong>servicio social o prácticas</strong> en una empresa de tecnología
+                </div>
+            </div>
+            <div class="objetivo-item">
+                <div class="obj-num">5</div>
+                <div class="obj-text">Contribuir a proyectos de <strong>código abierto</strong> en seguridad informática
+                </div>
+            </div>
+            <div class="objetivo-item">
+                <div class="obj-num">6</div>
+                <div class="obj-text">Obtener una <strong>certificación</strong> en seguridad (CompTIA Security+ o
+                    similar)</div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- ══════════════════════════════════════
+       DOCUMENTOS (CV + LLAVE PÚBLICA)
+    ══════════════════════════════════════ -->
+    <section id="documentos">
+        <div class="reveal">
+            <p class="section-label">09 · Archivos</p>
+            <h2 class="section-title">Mis <span>Documentos</span></h2>
+        </div>
+
+        <div class="docs-row reveal">
+            <!-- ✏️ Asegúrate de poner tu CV en docs/CV_AnaGuadalupeOrtiz.pdf -->
+            <a href="docs/Ana_Ortiz_CV.pdf" download class="doc-card">
+                <span class="doc-icon">📄</span>
+                <div>
+                    <div class="doc-label">Curriculum Vitae</div>
+                    <div class="doc-name">Descargar mi CV</div>
+                    <div class="doc-note">Formato PDF · Actualizado 2025</div>
+                </div>
+            </a>
+
+            <!-- ✏️ Llave pública — disponible al completar práctica ECDSA -->
+            <a href="docs/llave_publica.asc" download class="doc-card">
+                <span class="doc-icon">🔑</span>
+                <div>
+                    <div class="doc-label">Criptografía · ECDSA</div>
+                    <div class="doc-name">Mi Llave Pública</div>
+                    <div class="doc-note">Se generará en la práctica de ECDSA próximamente</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       CONTACTO (Formulario funcional con Formspree)
+    ══════════════════════════════════════ -
+    <section id="contacto">
+        <div class="reveal">
+            <p class="section-label">10 · Contáctame</p>
+            <h2 class="section-title">Hablemos <span>✦</span></h2>
+        </div>
+
+        <div class="contact-grid reveal">
+            <div class="contact-info">
+                <p>
+                    ¿Tienes algún proyecto, propuesta o simplemente quieres saludar?
+                    ¡No dudes en escribirme! Siempre estoy abierta a nuevas oportunidades
+                    de aprendizaje y colaboración.
+                </p>
+                <div class="contact-detail">
+                    <span>✉️</span>
+                    <a href="mailto:ana.ortiz@ejemplo.com">ana.ortiz@ejemplo.com</a>
+                </div>
+                <div class="contact-detail">
+                    <span>🏫</span>
+                    <span>ESCOM · Instituto Politécnico Nacional</span>
+                </div>
+                <div class="contact-detail">
+                    <span>📍</span>
+                    <span>Ciudad de México, México</span>
+                </div>
+            </div>
+
+            <!-- ✏️ Reemplaza "tu-id" con el ID de tu formulario de Formspree 
+            <form class="contact-form" action="https://formspree.io/f/tu-id" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                <button class="btn-send" type="submit">Enviar mensaje ✦</button>
+                <p class="form-success" id="formSuccess">¡Mensaje enviado! Gracias por escribirme 💜</p>
+            </form>
+        </div>
+    </section>-->
+
+    <!-- ══════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════ -->
+    <footer>
+        <a class="footer-logo" href="#inicio">Ana Guadalupe Ortiz González</a>
+        <p>© 2025 · ESCOM · IPN · Tópicos Selectos en Criptografía </p>
+    </footer>
+
+    <!-- Botón scroll top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
